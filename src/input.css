@@ -1,3 +1,242 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    @apply font-sans text-sm
+}
+*{
+    @apply box-border
+}
+/* دسته بندی ریسپانسیو */
+#dastebandy-respansive ul li a{
+    @apply text-lg p-4 
+}
+ #dastebandy-respansive ul li {
+    @apply  flex items-center justify-between
+} 
+
+
+/* کلاس های مشترک */
+.public-card{
+    @apply mx-5 border rounded-xl
+}
+
+ .slider-arrow{
+    @apply flex items-center justify-center w-10 h-10 bg-white border rounded-full absolute hover:text-black hover:cursor-pointer
+} 
+
+.btn1{
+    @apply flex justify-center items-center border border-[#d9d9dd] rounded-lg py-2 px-4
+}
+
+.takhfif{
+    @apply w-9 bg-[#ef3c51] text-white rounded-full px-2
+}
+/* [x-cloak] { display: none !important; }  */
+
+
+/* navbar */
+#menu div a{
+    @apply p-3  hover:border-b-2 hover:border-b-red-500
+}
+.item{
+    @apply flex items-center 
+}
+.item>a{
+    @apply w-56 px-2 py-2
+}
+
+.item:hover>a{
+    @apply bg-[#f1f2f4] text-red-500 fill-red-500
+}
+
+
+/* slider */
+#slider-items div{
+    @apply w-1.5 h-1.5 bg-[#566287] rounded-full
+}
+
+
+/* دیجی جت */
+#items-digiget>div>a{
+    @apply flex flex-col items-center
+ }
+
+ #items-digiget>div a span{
+    @apply mt-2
+ }
+
+ #items-digiget>div{
+    @apply mt-6
+ }
+
+ /* پیشنهاد شگفت انگیز */
+ .pishnahad-shegeft{
+    @apply flex flex-col items-center  bg-white p-3 
+ }
+
+ /* شگفت انگیز سوپر مارکتی */
+.shegeft-item {
+    @apply flex items-center justify-center bg-white w-16 h-16 rounded-full
+ }
+
+.shegeft-item> img{
+    @apply w-12 h-12
+ }
+
+/* تبلیغات ۱ */
+#tablighat-one div img {
+@apply  rounded-3xl overflow-hidden mx-auto
+}
+
+/* دسته بندی ها */
+#dastebandy div a{
+    @apply flex flex-col items-center justify-center  
+}
+#dastebandy div img{
+    @apply  w-28 lg:w-48
+}
+
+/*  پیشنهاد دیجی کالا  */
+#pishnahad a{
+    @apply flex flex-col items-center px-8 py-5  border-l 
+}
+
+ #pishnahad a:nth-child(odd){
+    @apply border-b
+} 
+
+#pishnahad a div{
+    @apply flex justify-center items-center w-24 h-24 bg-[#f2f2f2] rounded-full
+}
+
+#pishnahad a img{
+    @apply w-16 
+}
+
+#pishnahad a span{
+    @apply text-base text-center mt-3
+}
+
+
+/* محبوبترین ها */
+#mahbobtarinha div{
+    @apply flex justify-center items-center border-l p-4
+}
+
+/* digiclub */
+.img-items{
+    @apply  w-44 h-14 lg:ml-0 mt-3 lg:mt-0
+}
+
+/* mahsolate1 */
+#mahsolate2>div a{
+    @apply py-4 px-2
+}
+
+.mahsolate-iteams{
+    @apply p-5 border-l border-b lg:border-b-0 space-y-3
+}
+
+/* پرفروشترین ها */
+#porfroshtarin-item div.col-span-4{
+    @apply ml-3
+}
+
+#porfroshtarin-item div.col-span-4>img{
+    @apply w-24 h-20
+}
+
+#porfroshtarin-item div.col-span-1>span{
+    @apply text-3xl text-[#19bfd3]
+}
+
+#porfroshtarin-item div.col-span-7{
+    @apply border-b p-5
+}
+
+/* منتخب محصولات تخفیف و حراج */
+
+#montakhab a{
+    @apply flex flex-col items-center justify-center p-4  border-r  border-b
+}
+/* #montakhab a:nth-child(2n){
+    @apply border-b-0 !important
+}  */
+
+#montakhab img{
+    @apply w-44 h-44
+}
+
+#montakhab a>div{
+    @apply flex gap-x-10 my-5
+}
+
+#montakhab del{
+    @apply text-[#9e9fb1]
+}
+
+/* داغ ترین چند ساعت گذشته */
+#daghtarin a {
+    @apply flex items-center gap-x-3
+}
+
+#daghtarin img {
+    @apply w-24 h-24
+}
+
+#daghtarin a span {
+    @apply text-3xl font-bold text-[#19bfd3]
+}
+
+#daghtarin p {
+    @apply text-base border-b pb-4
+}
+
+/* خواندنی ها  */
+.khandanyha-card{
+    @apply flex border border-solid rounded-lg overflow-hidden mb-5
+}
+
+/* footer */
+.poshtibany{
+    @apply flex flex-col items-center cursor-pointer
+}
+
+#footer div strong{
+    @apply text-xl font-normal
+}
+
+#footer div a{
+    @apply text-base font-extralight text-[#838697] mt-4
+}
+
+.e-namad{
+    @apply flex items-center justify-center w-24 h-24 lg:w-28 lg:h-28 border border-solid rounded-lg p-4
+}
+
+#digi-footer>div div{
+    @apply tracking-wide
+}
+
+#digi-footer div>h3{
+    @apply text-lg font-medium
+}
+
+#digi-footer div>p{
+    @apply text-sm leading-7 text-[#838697] text-justify
+}
+
+#digi-footer div>p>a{
+    @apply text-[#19bfd3] no-underline
+}
+
+#footer-items img{
+    @apply bg-[#f1f2f4] justify-center py-7 px-8 border border-solid
+}
+
+/* پشتیبانی */
+.support-card{
+    @apply flex items-center py-4
+}

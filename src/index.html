@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../dist/css/fonts.css">
     <script src="../dist/js/cdn.min.js" defer></script>
-    <script src="../node_modules/axios/dist/axios.js" defer></script>
-    <title>دیجی کالا </title>
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <title>فروشگاه اینترنتی دیجی کالا</title>
+    <!-- src="../node_modules/axios/dist/axios.js" -->
 </head>
-<body>
-    <h1 class="text-red-400">i am zeinab</h1>
-<!--  x-html="(await axios.get('Components/Shared/navbar.html')).data" -->
 
-   <div x-html="(await axios.get('/digikala-component/digi/src/menu.html')).data"></div> 
-    
+<body dir="rtl"
+    x-data="{open:true,dastebandy:false,slideropen:false,closeapp:true,changeicon:true,opensupport:false,change:true,closesupport:true}"
+    id="top" class=" overflow-x-hidden">
+
+    <!-- header -->
+    <header x-html="(await axios.get('/digi/src/components/header.html')).data"
+        class=" sticky w-full top-0 bg-white z-[100]">
+
+    </header>
+
+    <!-- دیجی کالا جت -->
+    <!-- کامل -->
+    <section x-html="(await axios.get('/digi/src/components/digikalajet.html')).data">
+
+    </section>
+
+    <!-- پیشنهاد شگفت انگیز -->
+    <section x-html="(await axios.get('/digi/src/components/pishnahad-shegeft.html')).data"
+        class="  mx-5 bg-[#ef3c51]  rounded-2xl py-6 mt-7  relative">
+
+
+    </section>
+
+    <!-- شگفت انگیز سوپر مارکتی -->
+    <section x-html="(await axios.get('/digi/src/components/shegeft angiz.html')).data"
+        class="  bg-[#edf0ef] rounded-2xl mx-5 my-2 font-sans">
+
+    </section>
+
+
+
+
 </body>
+
 </html>

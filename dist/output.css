@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Yekan, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -544,21 +544,824 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.list-none {
-  list-style-type: none;
+.absolute {
+  position: absolute;
 }
 
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+.relative {
+  position: relative;
 }
 
-.font-bold {
-  font-weight: 700;
+.sticky {
+  position: sticky;
 }
 
-.text-red-400 {
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.bottom-28 {
+  bottom: 7rem;
+}
+
+.left-3 {
+  left: 0.75rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-\[100\] {
+  z-index: 100;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-36 {
+  width: 9rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[100rem\] {
+  width: 100rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
+}
+
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.gap-y-3 {
+  row-gap: 0.75rem;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-l-lg {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-r-lg {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-\[\#27c3d5\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(39 195 213 / var(--tw-border-opacity));
+}
+
+.bg-\[\#af111f\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(175 17 31 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#edf0ef\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 240 239 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ef3c51\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 60 81 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f1f2f4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 242 244 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-sans {
+  font-family: Yekan, sans-serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[\#27c3d5\] {
   --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
+  color: rgb(39 195 213 / var(--tw-text-opacity));
+}
+
+.text-\[\#566287\] {
+  --tw-text-opacity: 1;
+  color: rgb(86 98 135 / var(--tw-text-opacity));
+}
+
+.text-\[\#c7c8cb\] {
+  --tw-text-opacity: 1;
+  color: rgb(199 200 203 / var(--tw-text-opacity));
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+* {
+  font-family: Yekan, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  box-sizing: border-box;
+}
+
+/* دسته بندی ریسپانسیو */
+
+#dastebandy-respansive ul li a {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+#dastebandy-respansive ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* کلاس های مشترک */
+
+.public-card {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  border-radius: 0.75rem;
+  border-width: 1px;
+}
+
+.slider-arrow {
+  position: absolute;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.slider-arrow:hover {
+  cursor: pointer;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(217 217 221 / var(--tw-border-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.takhfif {
+  width: 2.25rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 60 81 / var(--tw-bg-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* [x-cloak] { display: none !important; }  */
+
+/* navbar */
+
+#menu div a {
+  padding: 0.75rem;
+}
+
+#menu div a:hover {
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.item>a {
+  width: 14rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.item:hover>a {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 242 244 / var(--tw-bg-opacity));
+  fill: #ef4444;
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+/* slider */
+
+#slider-items div {
+  height: 0.375rem;
+  width: 0.375rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(86 98 135 / var(--tw-bg-opacity));
+}
+
+/* دیجی جت */
+
+#items-digiget>div>a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#items-digiget>div a span {
+  margin-top: 0.5rem;
+}
+
+#items-digiget>div {
+  margin-top: 1.5rem;
+}
+
+/* پیشنهاد شگفت انگیز */
+
+.pishnahad-shegeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+}
+
+/* شگفت انگیز سوپر مارکتی */
+
+.shegeft-item {
+  display: flex;
+  height: 4rem;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.shegeft-item> img {
+  height: 3rem;
+  width: 3rem;
+}
+
+/* تبلیغات ۱ */
+
+#tablighat-one div img {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+/* دسته بندی ها */
+
+#dastebandy div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#dastebandy div img {
+  width: 7rem;
+}
+
+@media (min-width: 1024px) {
+  #dastebandy div img {
+    width: 12rem;
+  }
+}
+
+/*  پیشنهاد دیجی کالا  */
+
+#pishnahad a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left-width: 1px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+#pishnahad a:nth-child(odd) {
+  border-bottom-width: 1px;
+}
+
+#pishnahad a div {
+  display: flex;
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+}
+
+#pishnahad a img {
+  width: 4rem;
+}
+
+#pishnahad a span {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* محبوبترین ها */
+
+#mahbobtarinha div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left-width: 1px;
+  padding: 1rem;
+}
+
+/* digiclub */
+
+.img-items {
+  margin-top: 0.75rem;
+  height: 3.5rem;
+  width: 11rem;
+}
+
+@media (min-width: 1024px) {
+  .img-items {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+
+/* mahsolate1 */
+
+#mahsolate2>div a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.mahsolate-iteams > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.mahsolate-iteams {
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  padding: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .mahsolate-iteams {
+    border-bottom-width: 0px;
+  }
+}
+
+/* پرفروشترین ها */
+
+#porfroshtarin-item div.col-span-4 {
+  margin-left: 0.75rem;
+}
+
+#porfroshtarin-item div.col-span-4>img {
+  height: 5rem;
+  width: 6rem;
+}
+
+#porfroshtarin-item div.col-span-1>span {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(25 191 211 / var(--tw-text-opacity));
+}
+
+#porfroshtarin-item div.col-span-7 {
+  border-bottom-width: 1px;
+  padding: 1.25rem;
+}
+
+/* منتخب محصولات تخفیف و حراج */
+
+#montakhab a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  padding: 1rem;
+}
+
+/* #montakhab a:nth-child(2n){
+    @apply border-b-0 !important
+}  */
+
+#montakhab img {
+  height: 11rem;
+  width: 11rem;
+}
+
+#montakhab a>div {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
+#montakhab del {
+  --tw-text-opacity: 1;
+  color: rgb(158 159 177 / var(--tw-text-opacity));
+}
+
+/* داغ ترین چند ساعت گذشته */
+
+#daghtarin a {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+#daghtarin img {
+  height: 6rem;
+  width: 6rem;
+}
+
+#daghtarin a span {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(25 191 211 / var(--tw-text-opacity));
+}
+
+#daghtarin p {
+  border-bottom-width: 1px;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* خواندنی ها  */
+
+.khandanyha-card {
+  margin-bottom: 1.25rem;
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* footer */
+
+.poshtibany {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer div strong {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+
+#footer div a {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 200;
+  --tw-text-opacity: 1;
+  color: rgb(131 134 151 / var(--tw-text-opacity));
+}
+
+.e-namad {
+  display: flex;
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .e-namad {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+#digi-footer>div div {
+  letter-spacing: 0.025em;
+}
+
+#digi-footer div>h3 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+#digi-footer div>p {
+  text-align: justify;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(131 134 151 / var(--tw-text-opacity));
+}
+
+#digi-footer div>p>a {
+  --tw-text-opacity: 1;
+  color: rgb(25 191 211 / var(--tw-text-opacity));
+  text-decoration-line: none;
+}
+
+#footer-items img {
+  justify-content: center;
+  border-width: 1px;
+  border-style: solid;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 242 244 / var(--tw-bg-opacity));
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* پشتیبانی */
+
+.support-card {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .md\:mr-auto {
+    margin-right: auto;
+  }
+
+  .md\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
 }
