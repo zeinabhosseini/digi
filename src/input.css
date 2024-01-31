@@ -31,7 +31,7 @@
 }
 
 .takhfif{
-    @apply w-9 bg-[#ef3c51] text-white rounded-full px-2
+    @apply w-9 h-4 bg-[#ef3c51] text-white rounded-full px-2 
 }
 /* [x-cloak] { display: none !important; }  */
 
@@ -73,7 +73,10 @@
 
  /* پیشنهاد شگفت انگیز */
  .pishnahad-shegeft{
-    @apply flex flex-col items-center  bg-white p-3 
+    @apply flex flex-col items-center  bg-white px-3 py-2  w-44
+ }
+ .pishnahad-shegeft >img{
+    @apply w-40 h-36 p-2 py-4
  }
 
  /* شگفت انگیز سوپر مارکتی */
