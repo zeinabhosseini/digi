@@ -90,9 +90,12 @@
 
 /* تبلیغات ۱ */
 #tablighat-one div img {
-@apply  rounded-3xl overflow-hidden mx-auto
+@apply  rounded-2xl overflow-hidden w-full
 }
 
+/* #tablighat-one >div div{
+    @apply mx-auto
+} */
 /* دسته بندی ها */
 #dastebandy div a{
     @apply flex flex-col items-center justify-center  
