@@ -4,7 +4,7 @@
 
     <!-- chevron-right -->
     <div class="slider-arrow text-[#ababbb] right-2">
-        <span x-html="(await axios.get('/digi/src/svgs/chevron right.html')).data" class="w-4 h-4">
+        <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-right-svg.html')).data" class="w-4 h-4">
 
         </span>
 
@@ -13,7 +13,7 @@
 
     <!-- chevron-left -->
     <div class="slider-arrow text-[#ababbb] w-auto h-auto left-2">
-        <span x-html="(await axios.get('/digi/src/svgs/chevron-left.html')).data" class="w-4 h-4">
+        <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-left-svg.html')).data" class="w-4 h-4">
 
         </span>
 
@@ -124,5 +124,6 @@
         </div>
         <span>موس (موشواره)</span>
     </a>
+
 
 </div>

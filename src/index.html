@@ -35,7 +35,7 @@
 
     <!-- پیشنهاد شگفت انگیز -->
     <section x-html="(await axios.get('/digi/src/components/pishnahad-shegeft/pishnahad-shegeft.html')).data"
-        class="  mx-5 bg-[#ef3c51]  rounded-2xl py-6 mt-7  relative">
+        class="  mx-5 bg-[#ef3c51]  rounded-2xl py-6 pl-0.5 mt-7  relative">
 
 
     </section>
@@ -53,33 +53,65 @@
     </section>
 
     <!-- دسته بندی های دیجی کالا   -->
-    <section x-html="(await axios.get('/digi/src/components/dastebandy.html')).data" class="my-14 w-full">
+    <section x-html="(await axios.get('/digi/src/components/dastebandy/dastebandy.html')).data" class="my-14 w-full">
 
     </section>
 
     <!-- تبلیغات ۲  -->
-    <section x-html="(await axios.get('/digi/src/components/tablighat2.html')).data">
+    <section x-html="(await axios.get('/digi/src/components/tablighat2/tablighat2.html')).data">
 
     </section>
 
     <!-- پیشنهاد دیجی کالا slider border-->
-    <section id="pishnahad" x-html="(await axios.get('/digi/src/components/pishnahad.html')).data">
+    <section id="pishnahad" x-html="(await axios.get('/digi/src/components/pishnahad/pishnahad.html')).data">
 
     </section>
 
     <!-- محبوبترین برند ها slider-->
-    <section x-html="(await axios.get('/digi/src/components/mahbobtarin.html')).data" class="mt-7">
+    <section x-html="(await axios.get('/digi/src/components/mahbobtarin/mahbobtarin.html')).data" class="mt-7">
 
     </section>
 
-    <!-- mahsolate1 x-html="(await axios.get('/digi/src/components/mahsolate.html')).data"-->
-    <section>
-
+    <!-- mahsolate1 -->
+    <section x-html="(await axios.get('/digi/src/components/mahsolate1/mahsolate1.html')).data">
 
     </section>
+
     <!-- digiplus -->
-    <section x-html="(await axios.get('/digi/src/components/digiplus.html')).data"
+    <section x-html="(await axios.get('/digi/src/components/digiplus/digiplus.html')).data"
         class="public-card overflow-hidden mt-5 ">
+
+    </section>
+
+    <!-- digiclub-->
+    <section x-html="(await axios.get('/digi/src/components/digiclub/digiclub.html')).data">
+
+    </section>
+
+    <!-- mahsolate2  -->
+    <section id="mahsolate2" x-html="(await axios.get('/digi/src/components/mahsolat2/mahsolat2.html')).data">
+
+    </section>
+
+    <!-- پرفروشترین کالاها -->
+    <section x-html="(await axios.get('/digi/src/components/porfroshtarin/porfroshtarin.html')).data">
+
+    </section>
+
+    <!--۳ تبلیغات -->
+    <section x-html="(await axios.get('/digi/src/components/tablighat3/tablighat3.html')).data">
+
+    </section>
+
+    <!-- منتخب محصولات تخفیف و حراج  -->
+    <!-- ویرایش شود -->
+    <section id="montakhab" x-html="(await axios.get('/digi/src/components/montakhab/montakhab.html')).data"
+        class="public-card">
+
+    </section>
+
+    <!-- داغ ترین چند ساعت گذشته -->
+    <section id="daghtarin" x-html="(await axios.get('/digi/src/components/daghtarin/daghtarin.html')).data" class="public-card mt-6">
 
     </section>
 

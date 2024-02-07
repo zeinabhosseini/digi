@@ -1,0 +1,38 @@
+<div class="public-card bg-[#007295] flex flex-col  h-52  lg:flex-row lg:justify-between  lg:h-24 mt-6 p-4">
+    
+    <a href="#" class="w-40 flex items-center mb-4 pr-8">
+        <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/digiclub/svgs/digiclub-logo-white-svg.html')).data"
+            class="w-full ">
+
+
+        </span>
+    </a>
+
+    <div class="flex justify-center gap-1  ">
+        <a href="#" class=" bg-white w-36   p-0.5 rounded-tr-lg rounded-br-lg lg:w-72  ">
+            <div class="flex  flex-col  items-center lg:flex-row lg:justify-between">
+                <div class="flex justify-center items-center  p-3 ">چرخ و بخت</div>
+
+                <img src="../dist/img/digiclub/wheel-spinner.jpg" class="img-items  " alt="wheel-spinner">
+
+            </div>
+        </a>
+
+        <a href="#" class="bg-white w-36   p-0.5 lg:w-72 ">
+
+            <div class="flex flex-col  items-center lg:flex-row lg:justify-between ">
+                <div class="flex justify-center iteams-center p-3 ">ماموریت ها</div>
+                <img src="../dist/img/digiclub/missions.png" class="img-items " alt="missions">
+            </div>
+
+        </a>
+
+        <a href="#" class="bg-white w-36   p-0.5 lg:w-72 rounded-tl-lg rounded-bl-lg">
+            <div class="flex  flex-col  items-center lg:flex-row lg:justify-between">
+                <div class="flex justify-center iteams-center p-3 ">جایزه ها</div>
+                <img src="../dist/img/digiclub/awards.png" class="img-items " alt="awards">
+
+            </div>
+        </a>
+    </div>
+</div>
