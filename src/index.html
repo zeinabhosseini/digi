@@ -20,7 +20,7 @@
     id="top" class=" overflow-x-hidden">
 
     <!-- header -->
-    <header x-html="(await axios.get('/digi/src/components/header.html')).data"
+    <header x-html="(await axios.get('/digi/src/components/header/header.html')).data"
         class=" sticky w-full top-0 bg-white z-[100]">
 
     </header>
@@ -29,29 +29,59 @@
 
     <!-- دیجی کالا جت -->
     <!-- کامل -->
-    <section x-html="(await axios.get('/digi/src/components/digikalajet.html')).data">
+    <section x-html="(await axios.get('/digi/src/components/digikalajet/digigetitems.html')).data">
 
     </section>
 
     <!-- پیشنهاد شگفت انگیز -->
-    <section x-html="(await axios.get('/digi/src/components/pishnahad-shegeft.html')).data"
+    <section x-html="(await axios.get('/digi/src/components/pishnahad-shegeft/pishnahad-shegeft.html')).data"
         class="  mx-5 bg-[#ef3c51]  rounded-2xl py-6 mt-7  relative">
 
 
     </section>
 
     <!-- شگفت انگیز سوپر مارکتی -->
-    <section x-html="(await axios.get('/digi/src/components/shegeft angiz.html')).data"
+    <section x-html="(await axios.get('/digi/src/components/shegeft-angiz/shegeft-angiz.html')).data"
         class="  bg-[#edf0ef] rounded-2xl mx-5 my-2 ">
 
     </section>
 
-     <!-- تبلیغات ۱  -->
-     <section id="tablighat-one"  x-html="(await axios.get('/digi/src/components/tablighat.html')).data"   class="mx-5 mt-5 ">
-        
-     </section>
+    <!-- تبلیغات ۱  -->
+    <section id="tablighat-one" x-html="(await axios.get('/digi/src/components/tablighat1/tablighat1.html')).data"
+        class="mx-5 mt-5 ">
+
+    </section>
+
+    <!-- دسته بندی های دیجی کالا   -->
+    <section x-html="(await axios.get('/digi/src/components/dastebandy.html')).data" class="my-14 w-full">
+
+    </section>
+
+    <!-- تبلیغات ۲  -->
+    <section x-html="(await axios.get('/digi/src/components/tablighat2.html')).data">
+
+    </section>
+
+    <!-- پیشنهاد دیجی کالا slider border-->
+    <section id="pishnahad" x-html="(await axios.get('/digi/src/components/pishnahad.html')).data">
+
+    </section>
+
+    <!-- محبوبترین برند ها slider-->
+    <section x-html="(await axios.get('/digi/src/components/mahbobtarin.html')).data" class="mt-7">
+
+    </section>
+
+    <!-- mahsolate1 x-html="(await axios.get('/digi/src/components/mahsolate.html')).data"-->
+    <section>
 
 
+    </section>
+    <!-- digiplus -->
+    <section x-html="(await axios.get('/digi/src/components/digiplus.html')).data"
+        class="public-card overflow-hidden mt-5 ">
+
+    </section>
 
 
 </body>
