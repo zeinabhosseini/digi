@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 *{
-    @apply font-sans text-sm
+    @apply font-sans text-base
 }
+
 *{
     @apply box-border
 }
@@ -31,7 +32,7 @@
 }
 
 .takhfif{
-    @apply w-9 h-4 bg-[#ef3c51] text-white rounded-full px-2 
+    @apply flex items-center justify-center w-9 h-4 bg-[#ef3c51] text-white rounded-full px-3 py-2
 }
 /* [x-cloak] { display: none !important; }  */
 
@@ -75,30 +76,31 @@
  .pishnahad-shegeft{
     @apply flex flex-col items-center  bg-white px-3 py-2  w-44
  }
- .pishnahad-shegeft >img{
+ .pishnahad-shegeft img{
     @apply w-40 h-36 p-2 py-4
  }
 
  /* شگفت انگیز سوپر مارکتی */
 .shegeft-item {
-    @apply flex items-center justify-center bg-white w-16 h-16 rounded-full
+    @apply flex items-center justify-center bg-white  w-16 h-16 rounded-full
  }
 
-.shegeft-item> img{
-    @apply w-12 h-12
+.shegeft-item img{
+    @apply  w-12 h-12 overflow-hidden
  }
 
 /* تبلیغات ۱ */
 #tablighat-one div img {
-@apply  rounded-3xl overflow-hidden mx-auto
+@apply  rounded-2xl overflow-hidden w-full
 }
+
 
 /* دسته بندی ها */
 #dastebandy div a{
     @apply flex flex-col items-center justify-center  
 }
 #dastebandy div img{
-    @apply  w-28 lg:w-48
+    @apply  w-24 
 }
 
 /*  پیشنهاد دیجی کالا  */
@@ -127,6 +129,9 @@
 #mahbobtarinha div{
     @apply flex justify-center items-center border-l p-4
 }
+#mahbobtarinha div img{
+    @apply w-28
+}
 
 /* digiclub */
 .img-items{
@@ -134,7 +139,7 @@
 }
 
 /* mahsolate1 */
-#mahsolate2>div a{
+#mahsolate2 div a{
     @apply py-4 px-2
 }
 
