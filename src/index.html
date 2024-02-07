@@ -115,6 +115,17 @@
 
     </section>
 
+    <!-- خواندنی ها  -->
+    <section x-html="(await axios.get('/digi/src/components/khandaniha/khandaniha.html')).data" class="mx-5 my-12">
+
+    </section>
+    <hr />
+
+      <!-- پشتیبانی  scroll click-->
+      <div x-html="(await axios.get('/digi/src/components/poshtibany/poshtibany.html')).data" x-on:click="opensupport = ! opensupport" class="hidden lg:block z-[1000]   ">
+
+      </div>
+
 
 </body>
 

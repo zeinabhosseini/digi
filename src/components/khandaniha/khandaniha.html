@@ -1,0 +1,57 @@
+<div class="  ">
+    <div class=" flex justify-between px-8 mb-6">
+        <p class="text-lg font-medium">خواندنی ها</p>
+       
+        <div class="flex items-center text-[#19bfd3] cursor-pointer gap-x-1">
+            <span>مطالب بیشتر در دیجی کالا مگ</span>
+            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-left-svg.html')).data" class="w-3 h-3">
+
+            </span>
+        </div>
+    </div>
+
+    <div class=" grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4  gap-4  ">
+
+        <div class="khandanyha-card">
+            <a href="#">
+                <img src="../dist/img/khandanyha/10.22-19-610x380.jpg" class="w-full" alt="میکروفون">
+                <div class="p-5">
+                    <p>بررسی میکروفون استودیوییBM800;اقتصادی و عالی برای تولید محتوا</p>
+                </div>
+
+            </a>
+        </div>
+
+        <div class="khandanyha-card">
+            <a href="#">
+                <img src="../dist/img/khandanyha/10.12-26-610x380.jpg" alt="">
+                <div class="p-5">
+                    <p>بررسی فلفل و نمک ساب ایکیا ،تیغه ی سرامیکی و با کیفیت</p>
+                </div>
+
+            </a>
+        </div>
+
+        <div class="khandanyha-card">
+            <a href="#">
+                <img src="../dist/img/khandanyha/MacBook-with-external-hard-drive-being-used-featured-image_9_11zon-Copy-610x380.jpg"
+                    alt="">
+                <div class="p-5">
+                    <p>با این ۶ راهکار مشکل عدم شناسایی هارد اکسترنال را حل کنید </p>
+                </div>
+
+            </a>
+        </div>
+
+        <div class="khandanyha-card">
+            <a href="#">
+                <img src="../dist/img/khandanyha/new-homepod-design-610x380.jpg" alt="">
+                <div class="p-5">
+                    <p>اپل از نسل جدید اسپیکر هوشمند هوم پاد با قیمت ۲۹۹ دلار رو نمایی کرد</p>
+                </div>
+
+            </a>
+        </div>
+
+    </div>
+</div>
