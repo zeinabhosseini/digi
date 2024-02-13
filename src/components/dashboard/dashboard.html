@@ -1,0 +1,37 @@
+<div class="flex justify-around bg-white py-2">
+
+    <a href="#" class="flex flex-col items-center">
+        <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/dashboard/svgs/house-svg.html')).data">
+       
+
+        </span>
+        <span>خانه</span>
+    </a>
+
+    <a href="#" class="flex flex-col items-center text-[#9e9fb1]">
+        <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/dashboard/svgs/squares-2x2-svg.html')).data">
+       
+
+        </span>
+        <span>دسته بندی</span>
+    </a>
+
+    <a href="#" class="flex flex-col items-center text-[#9e9fb1]">
+        <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/dashboard/svgs/shopping-cart-svg.html')).data">
+       
+
+        </span>
+        <span>سبد خرید</span>
+    </a>
+
+
+    <a href="#" class="flex flex-col items-center text-[#9e9fb1]">
+        <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/dashboard/svgs/user-svg.html')).data">
+       
+
+    </span>
+        <span>دیجی کالای من</span>
+    </a>
+
+
+</div>

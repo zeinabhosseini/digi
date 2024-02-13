@@ -111,7 +111,8 @@
     </section>
 
     <!-- داغ ترین چند ساعت گذشته -->
-    <section id="daghtarin" x-html="(await axios.get('/digi/src/components/daghtarin/daghtarin.html')).data" class="public-card mt-6">
+    <section id="daghtarin" x-html="(await axios.get('/digi/src/components/daghtarin/daghtarin.html')).data"
+        class="public-card mt-6">
 
     </section>
 
@@ -121,10 +122,25 @@
     </section>
     <hr />
 
-      <!-- پشتیبانی  scroll click-->
-      <div x-html="(await axios.get('/digi/src/components/poshtibany/poshtibany.html')).data" x-on:click="opensupport = ! opensupport" class="hidden lg:block z-[1000]   ">
+    <!-- پشتیبانی  scroll click-->
+    <div x-html="(await axios.get('/digi/src/components/poshtibany/poshtibany.html')).data"
+        x-on:click="opensupport = ! opensupport" class="hidden lg:block z-[1000]   ">
 
-      </div>
+    </div>
+
+    <!-- دانلود اپلیکیشن-->
+    <div x-html="(await axios.get('/digi/src/components/download app/download app.html')).data"
+        x-on:click="closeapp = !closeapp" x-show="closeapp"
+        class="flex items-center text-white bg-[#232933] w-full h-16 px-7 py-6 rounded-t-lg sticky lg:hidden bottom-16 ">
+
+    </div>
+
+    <!--داشبورد -->
+    <div x-html="(await axios.get('/digi/src/components/dashboard/dashboard.html')).data"
+        class="block lg:hidden sticky bottom-0 ">
+
+    </div>
+
 
 
 </body>
