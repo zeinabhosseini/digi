@@ -18,7 +18,7 @@
     <!-- ========== x-bind:class="! opensupport ? 'hidden' : ''"  x-bind:class="! closesupport ? 'hidden' : ''"-->
 
     <div x-show="opensupport"
-        class="w-96 h-96 bg-white border border-solid border-red-500 rounded-2xl fixed  overflow-hidden left-14 bottom-20  ">
+        class="w-96 h-96 bg-white border border-solid border-red-500 rounded-2xl  fixed   left-14 bottom-20 overflow-hidden ">
 
 
         <div class=" bg-[#ef4056] text-white flex items-center justify-between px-5 py-4">
@@ -32,7 +32,7 @@
 
         </div>
         <!-- ===========scroll-mt-12 -->
-        <div class="   h-full overflow-y-scroll ">
+        <div class="   h-full overflow-y-scroll">
             <div class="px-2 pt-6 mb-10">
                 <div>
                     <div class="flex gap-x-1">
@@ -63,16 +63,15 @@
                     <!-- <div x-bind:class=" change ? '' : 'hidden'" x-on:click="change = ! change" class=""> -->
                     <div class=" support-card ">
                         <p class="text-xl font-medium ">چگونه میتوانم یک پروفایل ایجاد کنم؟</p>
-                        <div x-on:click="change = ! change" class="mr-auto">
-                            <span
-                                x-init="$el.innerHTML=(await axios.get('/digi/src/components/poshtibany/svgs/chevron-down-svg.html')).data"
-                                class="w-4 h-4 block ml-auto ">
+
+                        <div       class="mr-auto cursor-pointer">
+                            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-down-svg.html')).data" x-on:click="change=hidden"
+                                class="w-4 h-4 block  ">
 
                             </span>
-                            <span
-                                x-init="$el.innerHTML=(await axios.get('/digi/src/components/poshtibany/svgs/chevron-up-svg.html')).data"
-                                x-on:click="change = ! change" x-bind:class=" change ? 'hidden' : ''">
-
+                            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-up-svg.html')).data"  class="w-4 h-4 hidden"
+                               >
+<!--  x-on:click="change = ! change" x-bind:class=" change ? 'hidden' : ''" -->
                             </span>
 
                         </div>
@@ -95,14 +94,12 @@
                         <p class="text-xl font-medium  ">چطور در دیجی کالا سفارش خود را ثبت کنم ؟</p>
 
                         <div class="mr-auto">
-                            <span
-                                x-init="$el.innerHTML=(await axios.get('/digi/src/components/poshtibany/svgs/chevron-down-svg.html')).data"
+                            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-down-svg.html')).data"
                                 x-on:click="change = ! change" class="w-4 h-4 block">
 
                             </span>
 
-                            <span
-                                x-init="$el.innerHTML=(await axios.get('/digi/src/components/poshtibany/svgs/chevron-up-svg.html')).data"
+                            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-up-svg.html')).data"
                                 x-on:click="change = ! change" x-bind:class=" change ? 'hidden' : ''">
 
                             </span>
@@ -127,14 +124,12 @@
                             خریداری کرد؟</p>
                         <div class="mr-auto">
 
-                            <span
-                                x-init="$el.innerHTML=(await axios.get('/digi/src/components/poshtibany/svgs/chevron-down-svg.html')).data"
+                            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-down-svg.html')).data"
                                 x-on:click="change = ! change" class="w-4 h-4 block">
 
                             </span>
 
-                            <span
-                                x-init="$el.innerHTML=(await axios.get('/digi/src/components/poshtibany/svgs/chevron-up-svg.html')).data"
+                            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-up-svg.html')).data"
                                 x-on:click="change = ! change">
 
                             </span>

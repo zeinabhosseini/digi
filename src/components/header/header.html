@@ -6,3 +6,83 @@
     </a>
 
 </div>
+<!-- responsive -->
+<div class="mx-5 flex items-center justify-between my-3 lg:hidden">
+    <div class="">
+        <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/bars-3-svg.html')).data"
+            class="cursor-pointer">
+
+        </span>
+    </div>
+    <img src="../dist/img/logo/logo.svg" alt="digikala logo " />
+
+    <div class="border-black border-solid border-2 rounded-lg p-1 cursor-pointer " title="پشتیبانی آنلاین ">
+        <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/question-mark-svg.html')).data"
+            class="cursor-pointer">
+
+        </span>
+    </div>
+
+</div>
+
+<!-- -------- -->
+<hr class="mx-5 mb-3  lg:hidden" />
+
+<!--کامل -->
+<div class="  mx-5 flex   my-3 ">
+
+    <img src="../dist/img/logo/logo.svg" alt="digikala logo " class="hidden lg:block cursor-pointer" />
+
+    <!-- جست و جو -->
+
+    <div class="flex grow  bg-[#f0f0f1]  rounded-lg py-2 px-5  lg:max-w-[600px] mx-auto lg:mr-6 ">
+        <form class="flex   items-center  gap-4">
+
+            <span
+                x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/magnifying-glass-svg.html')).data">
+
+            </span>
+
+            <input type="search" placeholder="جستجو" name="search" id=""
+                class=" bg-[#f0f0f1] outline-0 align-middle text-base " />
+        </form>
+    </div>
+
+    <!-- سبد خرید -->
+    <div class=" flex  items-center   gap-3 mr-10 ">
+        <div class="btn1 gap-1">
+
+            <span
+                x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/arrow-left-end-on-rectangle-svg.html')).data"
+                class="cursor-pointer">
+
+            </span>
+
+            <div class=" justify-center text-base">
+                <a href="#">
+                    <span class="ml-1">ورود</span>|<span class="mr-1">ثبت نام</span>
+
+                </a>
+            </div>
+
+        </div>
+
+        <div class="border-r pr-5 h-7">
+            <a href="#">
+                <span
+                    x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/shopping-cart-svg.html')).data"
+                    class="cursor-pointer">
+
+                </span>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<hr class="mx-5 mt-3 mb-4 lg:hidden" />
+  <!-- navbar -->
+  <nav x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/navbar.html')).data" class="  border-b-2 ">
+
+  </nav>
