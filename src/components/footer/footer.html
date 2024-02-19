@@ -1,0 +1,520 @@
+<div>
+    <div class="flex justify-between  mb-4">
+        <img src="../dist/img/logo/digi.svg" alt="dijilogo" class="w-30 ">
+        <div class="btn1 gap-3 text-[#9e9fb1] cursor-pointer ">
+
+            <a href="#top" class="flex items-center gap-3">
+
+                <span>بازگشت به بالا</span>
+                <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-up-svg.html')).data"
+                    class="w-4 h-4">
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+    <!-- ======== -->
+    <div class="flex-wrap sm:flex">
+        <p class="pl-5 mb-3">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</p>
+        <span class="hidden sm:block">|</span>
+        <p class="sm:pr-5  ">۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</p>
+    </div>
+
+    <!-- ======= -->
+    <div class="hidden lg:grid lg:grid-cols-5 lg:grid-flow-row my-12">
+        <div class="poshtibany">
+
+            <img src="../dist/img/footer/express-delivery.svg" alt="express-delivery">
+            <span>امکان تحویل اکسپرس</span>
+        </div>
+
+        <div class="poshtibany">
+            <img src="../dist/img/footer/cash-on-delivery.svg" alt="cash-on-delivery">
+            <span>امکان پرداخت در محل</span>
+        </div>
+
+        <div class="poshtibany">
+            <img src="../dist/img/footer/support.svg" alt="support">
+            <span><bdi>۷</bdi>روز هفته ،<bdi>۲۴</bdi>ساعته</span>
+
+
+        </div>
+
+        <div class="poshtibany">
+            <img src="../dist/img/footer/days-return.svg" alt="days-return">
+            <span>هفت روز ضمانت بازگشت کالا</span>
+        </div>
+
+        <div class="poshtibany">
+            <img src="../dist/img/footer/original-products.svg" alt="original-products">
+            <span>ضمانت اصل بودن کالا</span>
+        </div>
+
+    </div>
+</div>
+
+<!-- ====== -->
+<div id="footer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:grid-flow-row  my-5">
+    <!-- col-1 -->
+    <div class="flex flex-col mb-7 ">
+        <strong>با دیجی کالا</strong>
+
+        <div class="flex flex-col">
+
+            <a href="#">اتاق خبر دیجی کالا</a>
+
+            <a href="#">فروش در دیجی کالا</a>
+
+            <a href="#" a>فرصت های شغلی</a>
+
+            <a href="#">گزارش تخلف در دیجی کالا</a>
+
+            <a href="#">تماس با دیجی کالا</a>
+
+            <a href="#">درباره دیجی کالا</a>
+
+
+        </div>
+    </div>
+
+    <!-- col-2 -->
+    <div class="flex flex-col mb-7">
+        <strong>خدمات مشتریان</strong>
+
+        <div class="flex flex-col">
+
+            <a href="#">پاسخ به پرسشهای متداول</a>
+
+            <a href="#">رویه های بازگرداندن کالا</a>
+
+            <a href="#">شرایط استفاده</a>
+
+            <a href="#">حریم خصوصی</a>
+
+            <a href="#">گزارش باگ</a>
+
+        </div>
+    </div>
+
+    <!-- col-3 -->
+    <div class="flex flex-col mb-7">
+        <strong>راهنمای خرید از دیجی کالا</strong>
+
+        <div class="flex flex-col">
+
+            <a href="#">نحوه ثبت سفارش</a>
+
+            <a href="#">رویه ارسال سفارش</a>
+
+            <a href="#">شیوه های پرداخت</a>
+
+        </div>
+    </div>
+
+    <!-- col-4 -->
+    <div class=" space-y-10">
+        <div>
+            <strong>همراه ما باشید</strong>
+
+            <div class="flex gap-10 mt-6 ">
+                <div>
+                    <a href="#">
+                        <span
+                            x-init="$el.innerHTML=(await axios.get('/digi/src/components/footer/svgs/instagram-svg.html')).data">
+
+                        </span>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <span
+                            x-init="$el.innerHTML=(await axios.get('/digi/src/components/footer/svgs/telegram-svg.html')).data">
+
+                        </span>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <span
+                            x-init="$el.innerHTML=(await axios.get('/digi/src/components/footer/svgs/twitter-svg.html')).data">
+
+                        </span>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <span
+                            x-init="$el.innerHTML=(await axios.get('/digi/src/components/footer/svgs/linkedin-svg.html')).data">
+
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="">
+            <span class="text-xl tracking-normal ">با ثبت ایمیل، از جدیدترین تخفیف ها با خبر شوید</span>
+
+            <div class=" mt-5 ">
+                <form class="flex gap-2">
+                    <input type="email" name="email" placeholder="ایمیل شما" autocomplete="on"
+                        class="text-xl bg-[#f0f0f1] p-3 flex grow rounded-lg outline-0" />
+                    <input type="submit" value="ثبت"
+                        class="text-xl text-white bg-[#e0e0e6] p-3  rounded-lg cursor-pointer" />
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ====== -->
+<div class="w-full bg-[#3c4b6d] rounded-lg  mb-6">
+    <div class="flex flex-col items-center space-y-5 lg:flex-row lg:space-y-0 py-4 px-5">
+        <div class="flex items-center lg:ml-auto gap-4">
+            <img src="../dist/img/footer/footerlogo2.png" class="w-6 h-6 lg:w-12 lg:h-12" alt="logo">
+            <span class="text-white text-xl lg:text-2xl">دانلود اپلیکیشن دیجی کالا</span>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4">
+            <img src="../dist/img/footer/google-play.svg" class="w-36" alt="google-play">
+            <img src="../dist/img/footer/coffe-bazzar.svg" class="w-36" alt="coffe-bazzar">
+            <img src="../dist/img/footer/myket.svg" class="w-36" alt="myket">
+            <img src="../dist/img/footer/sib-app.svg" class="w-36" alt="sib-app">
+        </div>
+
+        <div class="">
+            <div class="flex items-center text-white gap-x-1 text-center lg:hidden">
+                <span>اطلاعات بیشتر</span>
+                <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-left-svg.html')).data"
+                    class="w-3 h-3">
+
+                </span>
+            </div>
+
+            <div class="hidden lg:block lg:mr-5">
+                <img src="../dist/img/footer/More.svg" class=" w-12 h-12 bg-white rounded-md " alt="More">
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<!-- ====== -->
+<div class="w-full grid grid-cols-12   py-8">
+
+    <div id="digi-footer" class="col-span-12 lg:col-span-8 pl-8 ">
+        <div class="tracking-wide space-y-1 ">
+            <h2 class="text-2xl">فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</h2>
+            <p>یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای
+                قیمت
+                مناسب را در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛
+                ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این
+                طریق
+                مشتریان ثابت خود را داشته باشد.
+            </p>
+            <!-- open -->
+            <p x-on:click="openfooter=true" x-bind:class="openfooter? 'hidden' : ''"
+                class="flex items-center gap-1 cursor-pointer  ">
+                <span class="text-[#19bfd3]">مشاهده بیشتر </span>
+
+                <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-left-svg.html')).data"
+                    class="w-3 h-3 text-[#19bfd3]">
+
+                </span>
+            </p>
+        </div>
+        <!-- مشاهده بیشتر-->
+        <div x-show="openfooter" class="pt-3 space-y-2 ">
+            <div>
+                <h3>کدام محصولات در دیجی‌کالا قابل سفارش هستند؟</h3>
+                <p>تقریبا می‌توان گفت محصولی وجود ندارد که دیجی‌کالا برای مشتریان خود در سراسر کشور فراهم نکرده
+                    باشد. شما می‌توانید در تمامی روزهای هفته و تمامی شبانه روز یا در روزهای خاصی مثل حراج شگفت
+                    انگیز دیجی‌کالا که محصولات دارای تخفیف عالی می‌شوند، سفارش خود را به سادگی ثبت کرده و در روز
+                    و محدوده زمانی مناسب خود، درب منزل تحویل بگیرید. بعضی از گروه‌های اصلی و زیر مجموعه‌های
+                    پرطرفدار محصولات دیجی‌کالا شامل مواردی می‌شود که در ادامه به معرفی آن‌ها می‌پردازیم.
+                </p>
+            </div>
+            <div>
+                <h3>کالای دیجیتال</h3>
+                <p>
+                    انواع گوشی موبایل از برندهای مختلفی مثل آیفون، <a href="#"> گوشی سامسونگ</a>
+                    ، <a href="#"> گوشی نوکیا</a> ،<a href="#">گوشی شیائومی</a>، <a href="#"> گوشی هواوی</a>،
+                    و...، انواع کنسول بازی ps4 و ps5، انواع تبلت‌های پرطرفدار
+                    مثل <a href="#"> تبلت سامسونگ </a>نوت 10، انواع هندزفری مثل <a href="#"> هندزفری بی سیم</a>
+                    ،<a href="#"> تلوزیون </a>از برندهای مختلف مثل تلویزیون سامسونگ، سونی و...، انواع مانیتور،
+                    کیس، کیبورد، مودم از برندهای مختلف مثل <a href="#"> مودم ایرانسل </a>
+                    ،<a href="#"> آنتن </a>و ... تنها بخشی از محصولاتی هستند که زیر مجموعه کالای دیجیتال در
+                    دیجی‌کالا قرار دارند.
+
+                </p>
+
+            </div>
+
+            <div>
+                <h3>خودرو، ابزار و تجهیزات صنعتی</h3>
+                <p>
+                    انواع خودروهای ایرانی و خارجی از برندهای مطرحی مثل هوندا، کیا و...، موتور سیکلت از برندهایی
+                    مثل کویر موتور و...، لوازم جانبی خودرو مثل سیستم صوتی تصویر، ضبط و...، لوازم یدکی مثل دیسک و
+                    صفحه کلاج و... و لوازم مصرفی خودرو مثل <a href="#"> کفپوش سانا </a> در این گروه قرار
+                    می‌گیرند.
+                </p>
+            </div>
+
+            <div>
+                <h3>مد و پوشاک</h3>
+                <p>محصولاتی مثل انواع لباس مثل لباس مجلسی زنانه و مردانه، لباس راحتی، لباس ورزشی، اکسسوری، کیف،
+                    کفش، عینک آفتابی، لباس زیر، شال و روسری و... جزو مواردی هستند که می‌توانید آن‌ها را از
+                    برندهای مطرح ایرانی و خارجی موجود در دیجی کالا مثل آدیداس، نایکی، دبنهامز، آلدو، درسا و...
+                    خریداری کنید.
+                </p>
+            </div>
+
+            <div>
+                <h3>اسباب بازی کودک و نوزاد</h3>
+
+                <p>
+                    در این دسته از کالاهای دیجی‌کالا، انواع لوازم بهداشتی و حمام کودک و نوزاد، انواع پوشاک و
+                    کفش،<a href="#">تبلت </a> ،<a href="#">اسباب بازی </a> ، لوازم اتاق خواب کودک، لوازم ایمنی،
+                    لوازم شخصی و غذا خوری و ... قرار می‌گیرد تا خرید را برای پدر و مادرها به کاری سریع و آسان
+                    تبدیل کند.
+                </p>
+            </div>
+
+            <div>
+                <h3>کالاهای سوپر مارکتی</h3>
+                <p>
+                    هر چیزی از مواد خوراکی که به آن نیاز دارید، در <a href="#"> سوپرمارکت </a>
+                    دیجی‌کالا پیدا می‌شود، محصولات پرطرفداری مثل<a href="#"> کره بادام‌زمینی </a>
+                    ،<a href="#"> عسل </a>،<a href="#"> سس </a>، <a href="#"> قهوه </a>
+                    ،<a href="#"> زعفران </a>، شکلات، انواع نان و ... از برندهای معتبر و معروفی مثل<a href="#">
+                        نستله </a>، نوتلا، استارباکس، مزمز، چی توز و ... همگی در اختیار شما هستند و تا رسیدن به
+                    آشپزخانه شما تنها چند کلیک فاصله دارند.
+
+                </p>
+            </div>
+
+            <div>
+                <h3>زیبایی و سلامت</h3>
+                <p>
+                    انواع لوازم آرایش مثل لاک، رنگ مو، لوازم آرایش لب، چشم، صورت و... همگی در دیجی‌کالا موجود
+                    هستند. همچنین محصولات بهداشتی مثل انواع شامپو، کرم،<a href="#"> ماسک صورت </a>
+                    ، ضد تعریق،<a href="#"> ماسک مو </a> و...، انواع لوازم شخصی برقی، ست هدیه، بهترین انواع عطر
+                    و اسپری، انواع زیورآلات طلا و نقره مثل<a href="#"> سرویس طلا </a>، سرویس نقره و... به همراه
+                    وسایل مراقبت شخصی طبی در گروه زیبایی و سلامت دیجی‌کالا قرار می‌گیرد. در این بخش برندهای
+                    مطرحی مثل اسنس، پنبه ریز، سینره و... حضور دارند.
+
+                </p>
+            </div>
+
+            <div>
+                <h3>خانه و آشپزخانه</h3>
+                <p>
+                    یکی از متنوع‌ترین بخش‌های دیجی‌کالا، بخش لوازم خانه و آشپزخانه است که از محصولاتی مثل صندلی
+                    گیمینگ در بخش صندلی‌ها گرفته تا انواع<a href="#"> مبل راحتی </a>، انواع آبگرمکن مثل<a href="#">
+                        آبگرمکن بوتان </a>، لباسشویی‌های متنوع مثل انواع<a href="#"> لباسشویی اسنوا
+                    </a>، شیرآلات مختلف مثل شیرآلات قهرمان و...، ظروف و همچنین لوازم برقی آشپزخانه مثل توستر
+                    و... را شامل می‌شود و امکان خریدی عالی را برای مشتریان فراهم کرده است. در بخش لوازم خانگی
+                    دیجی‌کالا، برندهای معتبری مثل تفال، اخوان، فیلیپس، ال جی، اسنوا، جی پلاس و... حضور دارند.
+                </p>
+            </div>
+
+            <div>
+                <h3>کتاب، لوازم تحریر و هنر</h3>
+                <p>
+                    بخش هنر، کتاب، رمان و لوازم تحریر دیجی‌کالا نیز یکی از متنوع‌ترین بخش‌های این فروشگاه
+                    اینترنتی است. انواع کتاب و مجله، بازی، لوازم تحریر، سازهایی مثل<a href="#"> پیانو </a>
+                    ،<a href="#"> سنتور</a> ، <a href="#"> هنگ درام </a> و... با بهترین قیمت‌ها و از بهترین
+                    برندها در دسترس شما قرار دارند.
+
+                </p>
+            </div>
+
+            <div>
+                <h3>ورزش و سفر</h3>
+                <p>هر نوع وسیله و لباس ورزشی که فکرش را کنید، انواع وسایل کمپینگ و کوهنوردی، ساک و قمقمه ورزشی
+                    و... در این بخش قرار می‌گیرند. همچنین شما می‌توانید وسایل مد نظر خود را بر اساس نوع ورزش
+                    (آبی، هوازی، بدنسازی و...) در دسته‌بندی‌های دیجی‌کالا پیدا کنید.
+                </p>
+            </div>
+
+            <div>
+                <h3>محصولات بومی و محلی</h3>
+                <p>
+                    و در آخر دیجی‌کالا از طریق به فروش رساندن محصولات بومی و سنتی متفاوتی مثل انواع خوراکی، گلیم
+                    و گبه، ابزار و ... تلاش کرده تا بین هنر ایرانی و متقاضیان آن کوتاه‌ترین راه را پیدا کند. در
+                    این بخش شما می‌توانید انواع محصولات از جمله ظروف زیبای مخصوص به <a href="#"> سفره هفت‌سین
+                    </a>
+                    و پذیرایی از مهمانان در روزهای<a href="#"> نوروز </a>، انواع آیینه و شمعدان و هر آن چیزی را
+                    که برای خلق زیبایی در روزهای بهاری به آن نیاز دارید، با قیمت مناسب و تنوع بسیار بالا انتخاب
+                    کنید. دیجی‌کالا همچنین برای اینکه حال و هوای عید را به اعضای خود هدیه کند،<a href="#"> تقویم
+                        ۱۴۰۱ </a>، انواع ایده<a href="#"> عکس پروفایل عید نوروز</a> ،<a href="#"> آهنگ‌های عید
+                        نوروز</a> و موزیک‌های شاد بهاری، وسایل مربوط به<a href="#"> خانه‌تکانی</a>
+                    و <a href="#"> انواع لباس های عید </a>را برای شما فراهم کرده است تا بتوانید در کنار خرید
+                    خود، از این حال و هوای تازه نهایت لذت را ببرید.
+
+                </p>
+            </div>
+
+            <div>
+                <h3>گزارش های سالیانه دیجی کالا</h3>
+                <p>
+                    در راستای توجه ویژه به شفافیت به عنوان یکی از اصلی‌ترین ارزش‌های محوری دیجی‌کالا، با شروع
+                    سال ۱۳۹۸ داستان‌پردازی با داده‌های آماری و ارائه گزارش‌های سالانه آغاز شد. مسیری که دستاورد
+                    آن تا امروز چندین گزارش سالانه و تخصصی مثل <a href="#"> گزارش سالانه ۱۳۹۸</a>
+                    ، <a href="#"> گزارش سالانه ۱۳۹۹</a> و<a href="#"> گزارش سالانه ۱۴۰۰</a>
+                    دیجی‌کالا هستند. علاوه بر این،<a href="#"> گزارش منابع انسانی سال ۱۳۹۹</a>
+                    ، <a href="#"> گزارش منابع انسانی سال ۱۴۰۰</a> و همچنین <a href="#"> گزارش کتاب
+                        دیجی‌کالا</a> ، از دیگر گزارش‌های تخصصی دیجی‌کالا به حساب می‌آیند. انتشار این گزارش‌ها
+                    امکان رصد شفاف‌تر و دقیق‌تر خدمات دیجی‌کالا را فراهم می‌کند، وضعیت بازار آنلاین کشور را به
+                    نمایش می‌گذارد و به تمامی کسب‌وکارهای ایرانی کمک می‌کند تا با فرایندهای فروش و عرضه آنلاین
+                    کالاهای خود بیشتر آشنا شوند.
+
+                </p>
+            </div>
+
+            <div>
+                <h3>جام جهانی قطر 2022</h3>
+                <p>
+                    <a href="#"> جام‌ جهانی ۲۰۲۲ قطر </a> از ۲۹ آبان شروع می شود و دیجی‌کالا به همراه بازی‌ و
+                    مسابقه پیش‌بینی و جوایز میلیونی در کنار شما خواهد بود. شما می‌توانید با شرکت در مسابقه
+                    پیش‌بینی بازی‌ها، شانس خود را در قرعه‌کشی روزانه <a href="#"> جام‌ جهانی ۲۰۲۲ قطر </a>امتحان
+                    کنید. در کنار بازی، مسابقه و قرعه‌کشی، در اینجا با جدول برنامه مسابقات، اخبار جام‌جهانی و
+                    نتایج بازی‌ها به روز خواهیم بود.
+                </p>
+            </div>
+
+            <div>
+                <h3>بلک فرایدی دیجی کالا</h3>
+                <p>
+                    <a href="#"> بلک فرایدی دیجی کالا </a> همراه با میلیاردها تخفیف برای میلیون‌ها کالا، از
+                    چهارشنبه دوم آذرماه آغاز و تا پایان جمعه چهارم ادامه خواهد داشت. در<a href="#"> بلک فرایدی
+                        دیجی کالا </a>، علاوه‌ بر اینکه برندهای موردعلاقه شما از تمامی دسته‌بندی‌های موبایل،
+                    خانه و آشپزخانه، سلامت و زیبایی، پوشاک و ... با تخفیف‌های ویژه حضور دارند، می‌توانید بازی
+                    کنید، امتیاز به دست آورید و با کدهای تخفیف جذاب و شگفت‌انگیز خرید کنید.
+                </p>
+            </div>
+            <!-- close -->
+            <p x-on:click="openfooter=false" class="flex items-center gap-1 cursor-pointer">
+                <span class="text-[#19bfd3]">بستن</span>
+
+                <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-left-svg.html')).data"
+                    class="w-3 h-3 text-[#19bfd3]">
+
+                </span>
+
+            </p>
+
+        </div>
+
+
+    </div>
+    <!-- nemad -->
+    <div class=" col-span-12  justify-center lg:col-span-4 lg:justify-end pt-8 lg:pt-0">
+
+        <div class="flex justify-center  gap-2">
+
+            <div class="e-namad">
+                <a href="#"><img src="../dist/img/footer/rezi.png" class="w-20 h-20" alt="rezi"></a>
+            </div>
+
+            <div class="e-namad">
+                <a href="#"><img src="../dist/img/footer/kasbokar.png" class="w-16 h-16" alt="kasbokar"></a>
+            </div>
+
+            <div class="e-namad">
+                <a href=""><img src="../dist/img/footer/rezi.png" class="w-20 h-20" alt="rezi"></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<hr />
+
+<!-- ====== -->
+<p class="my-10  text-center">برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام
+    حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است</p>
+
+<!-- ====edit=== lg:grid-rows-2 grid-rows-6-->
+<div id="footer-items" class=" flex  flex-wrap  ">
+<a href="#">
+    <img src="../dist/img/footer/digimag.svg" class="" alt="digimag">
+</a>
+   
+<a href="#">
+    <img src="../dist/img/footer/digipay.svg" class="" alt="digipay">
+</a>
+    
+<a href="#">
+    <img src="../dist/img/footer/digistyle.svg" class="" alt="digistyle">
+</a>
+    
+<a href="#">
+    <img src="../dist/img/footer/digiplus.svg" class="" alt="digiplus">
+</a>
+   
+<a href="#">
+    <img src="../dist/img/footer/digiclub.svg" class="lg:w-40" alt="digiclub">
+</a>
+   
+<a href="#">
+    <img src="../dist/img/footer/jet.svg" class="" alt="jet">
+
+</a>
+   
+<a href="#">
+    <img src="../dist/img/footer/magnet.svg" class="" alt="magnet">
+</a>
+   
+<a href="#">
+    <img src="../dist/img/footer/digiMehr.svg" class="" alt="digiMehr">
+</a>
+    
+<a href="#">
+    <img src="../dist/img/footer/fidibo.svg" class="" alt="fidibo">
+</a>
+   
+<a href="#">
+    <img src="../dist/img/footer/diginext.svg" class="" alt="diginext">
+
+</a>
+    
+<a href="#">
+    <img src="../dist/img/footer/pindo.svg" class="" alt="pindo">
+</a>
+    
+<a href="#">
+    <img src="../dist/img/footer/komodaa.svg" class="" alt="komodaa">
+</a>
+   
+<a href="#">
+    <img src="../dist/img/footer/digiexpress.svg" class="" alt="digiexpress">
+</a>
+  
+<a href="#">
+    <img src="../dist/img/footer/ganjeh.svg" class="" alt="ganjeh">
+</a>
+    
+<a href="#">
+    <img src="../dist/img/footer/digify.svg" class="" alt="digify">
+</a>
+    
+<a href="#">
+    <img src="../dist/img/footer/smartech.svg" class="" alt="smartech">
+</a>
+    
+<a href="#">
+    <img src="../dist/img/footer/digikala-business.svg" class="" alt="digikala-business">
+</a>
+    
+
+</div>
