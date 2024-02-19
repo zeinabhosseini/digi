@@ -122,6 +122,11 @@
     </section>
     <hr />
 
+     <!-- footer قسمت آخر -->
+     <footer x-html="(await axios.get('/digi/src/components/footer/footer.html')).data" x-data="{openfooter:false}" class="mx-5  pt-10">
+
+     </footer>
+
     <!-- پشتیبانی  scroll click-->
     <div x-html="(await axios.get('/digi/src/components/poshtibany/poshtibany.html')).data"
         x-on:click="opensupport = ! opensupport" class="hidden lg:block z-[1000]   ">
