@@ -1,0 +1,215 @@
+<div class="mx-5  flex items-center ">
+
+    <div x-on:mouseover="dastebandy= true" x-on:mouseleave.away="dastebandy= false"
+        class="hidden lg:block p-3  hover:border-b-2 hover:border-b-red-500 ">
+
+        <a href="#" class=" flex items-center gap-3 ">
+            <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/bars-3-svg.html')).data"
+                class="cursor-pointer">
+
+            </span>
+
+            <strong>دسته بندی کالاها</strong>
+        </a>
+
+    </div>
+
+    <!-- ======= -->
+    <div id="menu" class="hidden lg:block lg:mr-5 ">
+        <div class=" flex items-center gap-x-3  border-r pr-2 ">
+
+            <div>
+                <a href="#">
+                    <span>سوپر مارکت</span>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+
+                    <span
+                        x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/fire-svg.html')).data">
+
+                    </span>
+                    <span>پرفروشترین ها</span>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <span>تخفیف ها و پیشنهاد ها</span>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <span>شگفت انگیزها</span>
+                </a>
+            </div>
+
+            <div class="border-r ">
+                <a href="#">
+                    <span>سوالی دارید؟</span>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <span>در دیجی کالا بفروشید!</span>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- انتخاب شهر -->
+    <div class=" flex items-center cursor-pointer lg:mr-auto">
+        <div class="flex gap-3 px-2 py-3  ">
+            <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/map-pin-svg.html')).data">
+
+            </span>
+            <span class="text-base">لطفا شهر خود را وارد کنید</span>
+        </div>
+
+        <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-left-svg.html')).data"
+            class=" w-4 h-4 lg:hidden mx-auto">
+
+        </span>
+
+    </div>
+
+</div>
+
+<!-- دسته بندی کالاها-->
+<div x-show="dastebandy" x-on:mouseleave="dastebandy=false" dir="ltr"
+    class=" h-80 w-96 hidden lg:block overflow-y-scroll  ">
+    <ul dir="rtl">
+
+        <li class="item ">
+            <a href="#" class="flex gap-x-3 items-center ">
+                <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/mobile-svg.html')).data">
+
+                </span>
+                <span> موبایل</span>
+
+
+            </a>
+        </li>
+
+        <li class="item">
+            <a href="#" class="flex gap-x-2 items-center">
+                <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/laptop-svg.html')).data">
+
+                </span>
+                <span>کالای دیجیتال</span>
+
+            </a>
+        </li>
+
+        <li class="item">
+            <a href="#" class="flex gap-x-2 items-center">
+                <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/home-svg.html')).data">
+
+                </span>
+                <span> خانه و آشپز خانه</span>
+            </a>
+        </li>
+
+        <li class="item">
+            <a href="#" class="flex gap-x-2 items-center">
+                <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/shirt-svg.html')).data">
+
+                </span>
+                <span>مد و پوشاک</span>
+
+            </a>
+        </li>
+
+        <li class="item">
+            <a href="#" class="flex gap-x-2 items-center">
+                <span
+                    x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/cheese-swiss-svg.html')).data">
+
+                </span>
+                <span>کالاهای سوپر مارکتی</span>
+
+            </a>
+        </li>
+
+        <li class="item">
+            <a href="#" class="flex gap-x-2 items-center">
+                <span
+                    x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/pen-ruler-svg.html')).data">
+
+                </span>
+                <span>کتاب ، لوازم و التحریر و هنر</span>
+
+            </a>
+        </li>
+
+        <li class="item">
+            <a href="#" class="flex gap-x-2 items-center">
+                <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/baby-svg.html')).data">
+
+                </span>
+                <span>اسباب بازی، کودک و نوزاد</span>
+            </a>
+        </li>
+
+        <li class="item">
+            <a href="#" class="flex gap-x-2 items-center">
+                <span
+                    x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/heart-circle-check-svg.html')).data">
+
+                </span>
+                <span>زیبایی و سلامت</span>
+
+            </a>
+        </li>
+
+        <li class="item">
+            <a href="#" class="flex gap-x-2 items-center">
+                <span
+                    x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/volleyball-svg.html')).data">
+
+                </span>
+                <span>ورزش و سفر</span>
+
+            </a>
+        </li>
+
+        <li class="item">
+            <a href="#" class="flex gap-x-2 items-center">
+                <span
+                    x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/wrench-screwdriver-svg.html')).data">
+
+                </span>
+                <span>ابزار، لوازم صنعتی و ساختمانی</span>
+
+            </a>
+        </li>
+
+        <li class="item">
+            <a href="#" class="flex gap-x-2 items-center">
+                <span
+                    x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/motorcycle-svg.html')).data">
+
+                </span>
+                <span>خودرو و موتور سیکلت</span>
+
+            </a>
+        </li>
+
+        <li class="item">
+            <a href="#" class="flex gap-x-2 items-center">
+                <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/header/svgs/rug-svg.html')).data">
+                   
+                </span>
+                <span>محصولات بومی و محلی</span>
+
+            </a>
+        </li>
+
+    </ul>
+</div>
