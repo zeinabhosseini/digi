@@ -4,36 +4,33 @@
         class="w-14 h-14 bg-[#ef4056] text-white rounded-full flex items-center justify-center  fixed bottom-2 left-12  cursor-pointer  ">
 
         <span x-init="$el.innerHTML=(await axios.get('/digi/src/components/poshtibany/svgs/headset-svg.html')).data"
-            x-bind:class="! changeicon ? 'hidden' : ''">
+            x-bind:class="! changeicon ? '' : 'hidden'"  x-show="" > 
 
         </span>
 
         <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/x-mark-svg.html')).data"
-            x-bind:class="! changeicon ? '' : 'hidden'">
+            x-bind:class="! changeicon ? 'hidden' : ''">
 
         </span>
 
     </div>
 
-    <!-- ========== x-bind:class="! opensupport ? 'hidden' : ''"  x-bind:class="! closesupport ? 'hidden' : ''"-->
-
-    <div x-show="opensupport"
+        <div x-show="changeicon"
         class="w-96 h-96 bg-white border border-solid border-red-500 rounded-2xl  fixed   left-14 bottom-20 overflow-hidden ">
 
 
-        <div class=" bg-[#ef4056] text-white flex items-center justify-between px-5 py-4">
+        <div  class=" bg-[#ef4056] text-white flex items-center justify-between px-5 py-4">
             <span class="text-2xl">پشتیبانی آنلاین</span>
 
-            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/arrow-left-svg.html')).data"
-                x-on:click="closesupport = ! closesupport" class="cursor-pointer w-6 h-6">
-
+            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/arrow-left-svg.html')).data" x-on:click="changeicon = ! changeicon"
+                 class="cursor-pointer w-6 h-6">
 
             </span>
 
         </div>
-        <!-- ===========scroll-mt-12 -->
-        <div class="   h-full overflow-y-scroll">
-            <div class="px-2 pt-6 mb-10">
+        <!-- ===========-->
+        <div class="  h-80  overflow-y-scroll">
+            <div class="px-2 pt-6 ">
                 <div>
                     <div class="flex gap-x-1">
                         <span class=" text-lg">سلام </span>
@@ -60,25 +57,28 @@
                 <!-- ====== -->
                 <div class="  border rounded-lg px-4  mt-6">
 
-                    <!-- <div x-bind:class=" change ? '' : 'hidden'" x-on:click="change = ! change" class=""> -->
-                    <div class=" support-card ">
+                    <div  x-on:click="changeup=!changeup" class=" support-card cursor-pointer">
                         <p class="text-xl font-medium ">چگونه میتوانم یک پروفایل ایجاد کنم؟</p>
 
-                        <div       class="mr-auto cursor-pointer">
-                            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-down-svg.html')).data" x-on:click="change=hidden"
-                                class="w-4 h-4 block  ">
+                        <div class="mr-auto cursor-pointer">
+
+                            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-down-svg.html')).data"
+                                x-bind:class="changeup?'hidden':''" x-show="changedown"
+                                class="w-4 h-4  mr-auto  block ">
 
                             </span>
-                            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-up-svg.html')).data"  class="w-4 h-4 hidden"
-                               >
-<!--  x-on:click="change = ! change" x-bind:class=" change ? 'hidden' : ''" -->
+                            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-up-svg.html')).data"
+                                x-on:click="changeup=!changeup" x-show="changeup"
+                                class="w-4 h-4  mr-auto  ">
+
                             </span>
 
                         </div>
 
                     </div>
-                    <!-- </div> -->
-                    <div x-bind:class="change ? 'hidden' : ''" class="">
+
+                    <div x-show="changeup" class="">
+
 
                         <hr />
                         <p class="text-lg  py-5">
@@ -90,22 +90,23 @@
                 </div>
                 <!-- ===== -->
                 <div class=" border rounded-lg px-4 mt-2">
-                    <div class="support-card mt-2 ">
+                    <div  x-on:click="changeup1 = ! changeup1"  class="support-card mt-2 cursor-pointer ">
                         <p class="text-xl font-medium  ">چطور در دیجی کالا سفارش خود را ثبت کنم ؟</p>
 
                         <div class="mr-auto">
                             <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-down-svg.html')).data"
-                                x-on:click="change = ! change" class="w-4 h-4 block">
+                               x-bind:class="changeup1?'hidden':''"
+                                x-show="changedown1" class="w-4 h-4 block">
 
                             </span>
 
                             <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-up-svg.html')).data"
-                                x-on:click="change = ! change" x-bind:class=" change ? 'hidden' : ''">
+                                x-show="changeup1" x-on:click="changeup1=!changeup1">
 
                             </span>
                         </div>
                     </div>
-                    <div x-bind:class="change ? 'hidden' : ''" class="">
+                    <div x-show="changeup1" class="">
                         <hr />
                         <p class="text-lg  py-4">
                             بعد از ورود به پروفایل ، کالای مدنظر خود را به سبد خرید اضافه کنید ، پس از انتخاب آدرس
@@ -116,27 +117,28 @@
 
                 </div>
 
-                <!-- ========= -->
+                <!-- =========    -->
                 <div class=" border rounded-lg px-4 mt-2">
-                    <div class="support-card mt-2 ">
+                    <div  x-on:click="changeup2= !changeup2" class="support-card mt-2 cursor-pointer ">
                         <p class="text-xl font-medium">کالایی را که در طرح پیشنهاد شگفت انگیز می باشد می توان با
                             تعداد بیش از یک عدد
                             خریداری کرد؟</p>
                         <div class="mr-auto">
 
-                            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-down-svg.html')).data"
-                                x-on:click="change = ! change" class="w-4 h-4 block">
+                            <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-down-svg.html')).data" x-bind:class="changeup2? 'hidden':''"
+                            x-show="changedown2"
+                                class="w-4 h-4 block">
 
                             </span>
 
                             <span x-init="$el.innerHTML=(await axios.get('/digi/src/svgs/chevron-up-svg.html')).data"
-                                x-on:click="change = ! change">
+                            x-show="changeup2" x-on:click="changeup2=!changeup2"  >
 
                             </span>
                         </div>
                     </div>
 
-                    <div x-bind:class=" change ? 'hidden' : ''">
+                    <div x-show="changeup2">
                         <hr />
                         <p class="text-lg  py-4">
                             به دلیل اینکه طرح پیشنهاد شگفت انگیز یک طرح تشویقی خرید است، دیجی‌کالا تعهدی در قبال
@@ -150,7 +152,7 @@
                 </div>
 
                 <!-- ===== -->
-                <div class="px-8 mt-6 mb-8 flex flex-col items-center">
+                <div class="px-8 my-6  flex flex-col items-center">
 
                     <div
                         class="w-40 bg-[#ef4056] rounded-full text-white flex items-center justify-center gap-2 cursor-pointer  p-3 ">
